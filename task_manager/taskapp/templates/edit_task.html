@@ -1,8 +1,0 @@
-<!-- taskapp/templates/taskapp/task_edit.html -->
-<h2>Edit Task</h2>
-<form method="post" action="">
-  {% csrf_token %}
-  {{ form.as_p }}
-  <button type="submit">Save changes</button>
-</form>
-<a href="{% url 'task_list' %}">Back to Task List</a>
