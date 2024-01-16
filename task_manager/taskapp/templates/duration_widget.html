@@ -1,0 +1,7 @@
+<!-- taskapp/templates/widgets/duration_widget.html -->
+{% load static %}
+<input type="number" name="{{ widget.name }}_0" id="{{ widget.id_for_label }}_0" min="{{ widget.attrs.min }}" step="{{ widget.attrs.step }}" class="{{ widget.attrs.class }}" {% include "django/forms/widgets/attrs.html" %}>
+<label for="{{ widget.id_for_label }}_0">years</label>
+
+<input type="number" name="{{ widget.name }}_1" id="{{ widget.id_for_label }}_1" min="{{ widget.attrs.min }}" step="{{ widget.attrs.step }}" class="{{ widget.attrs.class }}" {% include "django/forms/widgets/attrs.html" %}>
+<label for="{{ widget.id_for_label }}_1">months</label>
